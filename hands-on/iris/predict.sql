@@ -9,6 +9,6 @@ FROM
     SepalWidthCm,
     PetalLengthCm,
     PetalWidthCm,
-    Species AS label
+    Species
   FROM
     `dataset_name.table_name`))
