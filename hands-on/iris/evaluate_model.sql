@@ -1,7 +1,7 @@
 SELECT
   *
 FROM
-  ML.EVALUATE(MODEL `<dataset_name>.<model_name>`, (
+  ML.EVALUATE(MODEL `dataset_name.model_name`, (
   SELECT
     SepalLengthCm,
     SepalWidthCm,
@@ -9,4 +9,4 @@ FROM
     PetalWidthCm,
     Species AS label
   FROM
-    `<dataset_name>.<table_name>`))
+    `dataset_name.table_name`))

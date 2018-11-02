@@ -1,4 +1,4 @@
-CREATE OR REPLACE MODEL `<dataset_name>.<model_name>`
+CREATE OR REPLACE MODEL `dataset_name.model_name`
 OPTIONS (
   model_type = 'logistic_reg') AS (
   SELECT
@@ -8,4 +8,4 @@ OPTIONS (
     PetalWidthCm,
     Species AS label
   FROM
-    `<dataset_name>.<table_name>`)
+    `dataset_name.table_name`)

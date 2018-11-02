@@ -3,7 +3,7 @@ SELECT
   predicted_label,
   predicted_label_probs
 FROM
-  ML.PREDICT(MODEL `<dataset_name>.<model_name>`, (
+  ML.PREDICT(MODEL `dataset_name.model_name`, (
   SELECT
     SepalLengthCm,
     SepalWidthCm,
@@ -11,4 +11,4 @@ FROM
     PetalWidthCm,
     Species AS label
   FROM
-    `<dataset_name>.<table_name>`))
+    `dataset_name.table_name`))
