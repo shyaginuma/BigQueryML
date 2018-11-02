@@ -1,7 +1,7 @@
 CREATE OR REPLACE MODEL `dataset_name.model_name` -- モデルの名前を定義
 OPTIONS (
   model_type = 'linear_reg', --線形回帰を使用
-  input_label_cols = ['medv']
+  input_label_cols = ['medv'] -- 目的変数を指定
   ) AS (
   SELECT
     crim,

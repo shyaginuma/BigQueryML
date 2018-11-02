@@ -16,6 +16,6 @@ FROM
     ptratio,
     black,
     lstat,
-    medv AS label
+    medv
   FROM
     `dataset_name.table_name`))
